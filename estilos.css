@@ -1,0 +1,706 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	 
+}
+
+.grid_container{
+	display: grid;
+	gap: 3px;
+	grid-template: 
+	"header" 100px
+	"navbar" 110px
+	"main"	auto
+	"footer" auto
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: black;
+	height: auto;
+
+}
+
+.logo {
+    width: 195px;
+    padding: 10px;
+    margin-left: 5%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+
+
+ 
+}
+
+.navbar{
+	grid-area: navbar;
+	display: grid;
+	background-color: black;
+	text-align: center;
+
+}
+
+
+.menu  a {
+ color: white;
+ font-size: 18px;
+ padding: 1%;
+ margin-bottom: 5%;
+ text-decoration: none;
+ display: inline-block;
+ font-family: 'Poppins', sans-serif;
+ font-weight: bold;
+ border: 1px #d0d9d2 solid;
+ width: 88%;
+ text-align: center;
+ line-height: 35px;
+
+ 
+}
+
+.menu a:hover {
+	background-color: white;
+	color: black;
+}
+
+.main{
+	grid-area: main;
+	width: 100%;
+	
+}
+
+
+.quienes-somos {
+text-align: center;
+text-align: justify;
+margin: 5%;
+padding-top: 7%;
+font-size: 13px;
+
+}
+
+h1 {
+padding-bottom: 5%;	
+font-size: 45px;
+font-family: 'Quicksand', sans-serif;
+
+}
+
+p {
+font-size: 23px;	
+line-height: 1.6;
+font-family: 'Inter', sans-serif;
+}
+
+.vinos {
+padding-top: 7%;
+
+}
+
+
+
+.nuestros-vinos {
+text-align: center;
+padding-bottom: 6%;
+padding-top: 5%;
+font-size: 30px;
+font-family: 'Cinzel', serif;
+
+
+}
+
+
+.vinedos {
+padding-top: 16%;
+}
+
+.galeria img {
+	padding-left: 2%;
+	width: 97%;
+	height: auto;
+	transition: all 0.2s;
+}
+
+.galeria img:hover {
+	transform: scale(1.05);
+}
+
+.nuestros-vinedos {
+text-align: center;
+padding-bottom: 6%;
+padding-top: 5%;
+font-size: 30px;
+font-family: 'Cinzel', serif;
+
+}
+.buenos {
+	width: 100%;
+	padding-bottom: 5%;
+}
+.mendoza {
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.catamarca {
+	width: 100%;
+	padding-bottom: 20%;
+} 
+
+.footer {
+	grid-area: footer;
+	width: 100%;
+    height: 110px;
+	background-color: black;
+	padding-top: 5%;
+    
+
+    
+}
+footer p {
+	line-height: 1;
+    font-size: 12px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:#fff;
+    padding-left: 3%;
+	display: inline; 
+	
+	
+	
+    
+}
+.redes {
+	padding-top: 0;
+	
+	float: right;
+	list-style-type: none;
+    padding-right: 20px;
+    text-decoration: none;
+    display: inline;
+
+
+
+}
+
+.formulario {
+	
+	width: 80%;
+	background: rgb(78, 34, 39);
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 120px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 12px 4px rgba(0, 0, 0, 0.3);
+	font-size: 18px;
+	color: rgb(160, 129, 134);
+}
+
+h2{
+	color: rgb(160, 129, 134);
+	padding-bottom: 8%;
+}
+
+.info-formulario {
+	width: 100%;
+	padding: 22px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	border: none;
+	margin-top: 8px;
+}
+
+.mensaje {
+	width: 100%;
+	padding: 36px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	border: none;
+	margin-top: 8px;
+
+}
+
+.boton {
+	width: 100%;
+	background-color:rgb(160, 129, 134);
+	padding: 12px ;
+	margin-top: 6%;
+	color: rgb(249, 247, 247);
+	border: none;
+	border-radius: 4px;
+	
+
+}
+
+
+.banner {
+	
+	width: 100%;
+}
+
+.las-experiencias h4 {
+	padding-top: 15%;
+	font-size: 25px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: lighter;
+	text-align: center;
+	
+}
+	
+	
+.las-experiencias p {
+	font-size: 18px;
+	padding-top: 2%;
+	font-family: 'Inter', sans-serif;
+	margin: 4%;
+}
+
+
+.elementoCarousel {
+	display: none;
+	
+  }
+ 
+  .elementoCarousel img {
+	width: 100%;
+  }
+  
+  
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	color: rgb(237, 14, 14);
+	font-weight:lighter;
+	font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	padding: 12px;
+	
+  }
+  
+  
+  .next {
+	right: 0%;
+	border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+	left: 0%;
+	border-radius: 3px 0 0 3px ;
+  }
+  
+
+  .prev:hover, .next:hover {
+	background-color: rgba(81, 41, 51, 0.8);
+	padding: 5px;
+  }
+  
+  
+  
+  
+  
+  .numbertext {
+	color: #d20606;
+	padding: 1%;
+	font-size: 15px;
+	position: absolute;
+	
+  }
+  
+  
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+ 
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  #myBtn {
+	display: none; /* Esconder por default */
+	position: fixed; /* Position */
+	bottom: 3%;
+	right: 2%; 
+	z-index: 99; /* Que nada se superponga */
+	border: none; 
+	outline: none; 
+	background-color: rgb(96, 69, 69);
+	color: #f2f2f2; 
+	cursor: pointer; 
+	padding: 1rem;
+	border-radius: 10px;
+	font-size: 1.1rem;
+  }
+  
+  #myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
+
+
+@media (min-width: 768px) {
+
+	.grid_container{
+
+		grid-template: 
+		"header 	header" 	70px 
+		"navbar 	navbar" 	90px
+		"main       main " 	    auto
+		"footer 	footer" 	auto /
+		 auto		auto;
+ 	}
+
+
+
+.menu a {
+ font-size: 20px;
+ line-height: 40px;
+
+}
+
+.vinos {
+	width: 94%;
+	padding-left: 55px;
+}
+
+
+.vinedos {
+	padding-top: 20%;
+	display:grid;
+ 	grid-gap: 20px;
+ 	grid-template-columns: 1fr 1fr;
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+}
+
+.nuestros-vinedos {
+	width: 100%;
+	height: auto;
+	margin-left: 50%;
+
+
+}
+
+.buenos {
+	
+	grid-column: 1 / 2;
+}
+
+.mendoza {
+	
+	grid-column: 2 / 3;
+}
+	
+.catamarca {
+	width: 100%;
+    grid-column: 1/3;
+	margin-top: 1px;
+	
+	
+}
+
+.formulario {
+	width: 70%;
+}
+	
+.info-formulario {
+	
+	padding: 20px;
+}
+
+
+.las-experiencias h4 {
+	font-size: 30px;
+	padding-top: 8%;
+}
+
+.las-experiencias p {
+	text-align: center;
+}
+
+
+.elementoCarousel img {
+	padding: 5%;
+	
+  }
+
+@media (min-width: 992px) {
+	.grid_container{
+		grid-template: 
+		"header 	navbar  navbar" 	90px auto auto
+		"main       main    main" 	    auto
+		"footer 	footer 	footer" 	65px /
+		 auto		auto 	auto
+	}
+
+.header{
+	grid-area: header;
+	background-color: black;
+	height: 60px;
+	
+	
+
+}
+
+.navbar {
+	grid-area: navbar;
+	height: 68px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 30% 30%;
+	
+
+}
+ .logo {
+	padding-top: 9px;
+	margin-left: 50px ;
+ 	width: 180px;
+ }
+.menu {
+    
+	grid-area: navbar;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 0;
+	
+}
+
+.menu a {
+	padding-right: 60px;
+	font-size: 20x;
+    padding-top: 0;
+    display: inline-block;
+    border: none;
+	
+}
+
+.menu a:hover {
+	background-color: black;
+	color: rgb(87, 51, 55);
+}
+
+.main {
+	width: 100%;
+ 	padding-top: 4%;
+ 	height: 100%;
+ 	display:grid;
+ 	grid-template-columns: 1fr 1fr 1fr ;
+	gap: 40px;
+
+
+ }	
+
+
+ .quienes-somos {
+	padding-left: 3%;
+    padding-top: 10px;
+	grid-column: 1/3;
+	font-size: 15px;
+}
+
+.vinos {
+	padding-right: 5px;
+	width: auto;
+	height: auto;
+	padding-top: 40px;
+	grid-column: 3/4;
+    margin-right: 45px ;
+
+}
+
+.nuestros-vinos {
+	font-size: 23px;
+	align-content: center;
+
+	
+}
+
+.vinedos {
+	grid-column: 1/-1;
+	padding-top: 4%;
+	display:grid;
+ 	grid-gap: 10px;
+ 	grid-template-columns: 1fr 1fr 1fr;
+ 	padding-bottom: 5%;
+}
+.nuestros-vinedos {
+	width: 100%;
+	height: auto;
+	margin-left:102%;
+	font-size: 30px;
+}
+.buenos {
+	
+	grid-column: 1 / 2;
+}
+
+.mendoza {
+   
+	grid-column: 2 / 3;
+}
+	
+.catamarca {
+	
+	height: 102%;
+	grid-column: 3 / 4;
+	
+}
+	
+
+
+.footer {
+	height: 85px;
+	padding-top: 2%;
+}
+.footer p {
+	font-size: 16px;
+}
+
+.redes {
+	padding-right: 5%;
+}
+
+
+.formulario {
+	width: 50%;
+}
+	
+.info-formulario {
+	padding: 12px;
+}
+
+
+.mainexpe {
+	
+	width: 100%;
+ 	padding-top: 8%;
+ 	height: 100%;
+ 	display:grid;
+ 	grid-template-columns: 500px 1fr  ;
+	gap: 70px;
+
+}
+
+.las-experiencias {
+	grid-column: 1/2;
+}
+
+.las-experiencias h4 {
+	padding-top: 3%;
+	font-size: 35px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: lighter;
+	text-align: left;
+	padding-left: 10%;
+	
+	
+}
+	
+	
+.las-experiencias p {
+	font-size: 18px;
+	padding-top: 6%;
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	text-align: left;
+	padding-left: 10%;
+}
+
+.slider {
+	grid-column: 2/3;
+}
+
+.elementoCarousel img {
+	width: 90%;
+	padding-right: 2px;
+  }
+
+  
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	width: auto;
+	color: rgb(245, 10, 10);
+	font-weight:lighter;
+	font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	padding: 12px;
+	top:105% ;
+	
+	
+  }
+  .prev {
+	left: 0%;
+  }
+  .next {
+	right: 0%;
+  }
+ 
+  .dot {
+	cursor: pointer;
+	height: 12px;
+	width: 12px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	
+	
+  }
+
+}
+@media (min-width: 1200px) {
+	.grid_container{
+		grid-template: 
+		"header 	navbar  navbar" 	70px 
+		"main       main    main" 	    auto
+		"footer 	footer 	footer" 	65px /
+		 400px 		auto 	200px;
+
+	}
+}

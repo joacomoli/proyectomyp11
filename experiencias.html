@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimun-scale=1.0, maximum-scale=1.0"/>
+    <title>VinEgo</title>
+    <link rel="stylesheet" type="text/css" href="/estilos.css">
+    <link href="css/lightbox.min.css" rel="stylesheet" />
+
+</head>
+<body class="grid-container">
+
+
+    <header class="header">   
+        <a href="index.html" > <img class= "logo" src="imagenes/logo-vinego.png" alt="VinEgo"  /></a>   
+        
+        
+    </header>
+          
+    
+    <nav class="navbar">
+                    <ul class="menu">
+                          <li><a href="experiencias.html">Experiencias</a></li>
+                          <li><a href="contactanos.html">Contactanos</a></li>
+                          
+                    </ul>
+    </nav>
+    <img class="banner" src="imagenes/banner.jpg" alt="banner">
+  <main class="mainexpe" >
+
+    <div class="las-experiencias">
+      <h4> DESCUBRÍ LAS BODEGAS</h4>
+      <p>Disfrutá de un recorrido por nuestros viñedos y una visita al interior de las bodegas, para conectar con la cultura y tradición de la región.</p>
+    </div>
+
+   <div class="slider">
+
+    <div class="elementoCarousel fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="imagenes/recorrido1.jpg" >
+      
+    </div>
+  
+    <div class="elementoCarousel fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="imagenes/recorrido2.jpg" >
+      
+    </div>
+  
+    <div class="elementoCarousel fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="imagenes/recorrido3.jpg" >
+      
+    </div>
+  
+    <div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="slideActual(1)"></span>
+    <span class="dot" onclick="slideActual(2)"></span>
+    <span class="dot" onclick="slideActual(3)"></span>
+    
+  </div>
+  
+  <br>
+  
+  <div class="container">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
+  </div>
+  
+  
+  <script>
+    // Definir un índice y llamar a la función que muestra un slide
+    let indiceSlide = 1;
+    mostrarSlides(indiceSlide);
+  
+    // Mover el slide a través de los controles previo y próximo (1, -1)
+    function plusSlides(numero) {
+      mostrarSlides(indiceSlide += numero);
+    }
+  
+    // Mover el slide a través de los indicadores
+    function slideActual(numero) {
+      mostrarSlides(indiceSlide = numero);
+    }
+  
+    function mostrarSlides(numero) {
+      // Obtener los elementos para operar con ellos
+      let slides = document.getElementsByClassName("elementoCarousel");
+      let indicadores = document.getElementsByClassName("dot");
+  
+      // Validar "numero"
+      if (numero > slides.length) { indiceSlide = 1 }
+      if (numero < 1) { indiceSlide = slides.length }
+  
+      // Iterar y ocultar los slides y el estilo de los indicadores
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < indicadores.length; i++) {
+        indicadores[i].className = indicadores[i].className.replace(" active", "");
+      }
+  
+      // Mostrar el slide indicado con display block y agregarle el estilo al punto indicado
+      slides[indiceSlide - 1].style.display = "block";
+      indicadores[indiceSlide - 1].className += " active";
+    } 
+  
+    // SCROLL TO TOP:
+  
+    let buttonTop = document.getElementById("myBtn");
+  
+    // Al hacer scroll down 20px del top del documento, mostrar el boton
+    window.onscroll = function() { 
+      scrollFunction()
+    };
+  
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      buttonTop.style.display = "block";
+    } else {
+      buttonTop.style.display = "none";
+    }
+    }
+  
+    // Al hacer click, hacer scroll al top del documento
+    function topFunction() {
+      document.body.scrollTop = 0; // Safari
+      document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
+    } 
+  </script>
+    
+ </div>
+  </main>
+
+
+
+
+    <footer class="footer">
+        <p >Beber con moderación - Prohibida la venta a menores de 18 años.</p>
+      
+        <div class="redes">
+         <img src="imagenes/facebook.png" width="40px"/>
+         <img src="imagenes/instagram.png" width="40px"/>             
+        </div>
+       
+        
+     </footer>
+    </body>
+    </html>
